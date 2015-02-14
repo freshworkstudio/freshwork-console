@@ -23,5 +23,5 @@
     "bin": [
         "freshwork"
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
