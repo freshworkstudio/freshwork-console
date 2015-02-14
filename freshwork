@@ -2,7 +2,14 @@
 <?php
 $_ENV['HOME'] = getenv('HOME');
 
-require __DIR__.'/vendor/autoload.php';
+if (file_exists(__DIR__.'/vendor/autoload.php'))
+{
+	require __DIR__.'/vendor/autoload.php';
+}
+else
+{
+	require __DIR__.'/../../autoload.php';
+}
 require __DIR__.'/src/helpers.php';
 
 use Freshwork\ConsoleUtility\Commands\NewCommand;
