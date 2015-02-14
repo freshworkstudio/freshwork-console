@@ -37,6 +37,7 @@ freshwork
 freshwork list
 ```
 
+
 ##### New project
 You can install a new laravel project.
 ```sh
