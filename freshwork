@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+$_ENV['HOME'] = getenv('HOME');
+
+require __DIR__.'/vendor/autoload.php';
+require __DIR__.'/src/helpers.php';
+
+use Freshwork\ConsoleUtility\Commands\NewCommand;
+use Freshwork\ConsoleUtility\Commands\ServeCommand;
+use Freshwork\ConsoleUtility\Commands\ConfigCommand;
+use Freshwork\ConsoleUtility\Commands\InitCommand;
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+$application->add(new NewCommand);
+$application->add(new ServeCommand);
+$application->add(new ConfigCommand);
+$application->add(new InitCommand);
+$application->run();

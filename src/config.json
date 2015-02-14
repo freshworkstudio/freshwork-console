@@ -1,0 +1,7 @@
+{
+	"projects_folder":"~/code",
+	"ssh_connection_cmd":"ssh vagrant@127.0.0.1 -p 2222",
+	"homestead_code_directory":"/home/vagrant/code",
+	"homestead_ip":"192.168.10.10",
+	"hosts_file":"/private/etc/hosts"
+}
